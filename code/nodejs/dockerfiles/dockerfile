@@ -1,0 +1,3 @@
+FROM alpine
+
+CMD ["/bin/echo" , "Hi Docker. I'm a dockerfile !"]
