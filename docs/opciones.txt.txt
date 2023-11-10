@@ -1,0 +1,3 @@
+https://www.docker.com/blog/developing-using-rasa-and-docker/
+
+https://github.com/tamimendoza/node-whatsapp-apirest
