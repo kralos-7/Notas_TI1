@@ -1,12 +1,27 @@
 const qrcode = require('qrcode-terminal');
 const {Client} = require('whatsapp-web.js');
 
+const new_qr = require('qrcode');
+
 const client = new Client();
 
 const conex = async () => {
 
 	client.on('qr', qr => {
-		qrcode.generate(qr, {small: true});
+		//qrcode.generate(qr, {small: true});
+		new_qr.toFile('public/qrs/codeQR.png',qr,
+			{
+				color: {
+					dark: '#00F',
+					light: '#0000'
+				}
+			}
+			,
+			function (err) {
+				if (err) throw err
+				console.log('done');
+			}
+		);
 	});
 
 	client.on('ready', () => {

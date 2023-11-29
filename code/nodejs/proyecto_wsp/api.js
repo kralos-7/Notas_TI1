@@ -30,6 +30,10 @@ const apirest = express();
 const router = express.Router();
 const port = process.env.PORT || 8484;
 
+apirest.set('view engine','ejs');
+
+apirest.use(express.static("public"));
+
 apirest.use(bodyParser.urlencoded({ extended: true }));
 apirest.use(bodyParser.json());
 apirest.use(cors());
@@ -38,6 +42,10 @@ apirest.use('/', router);
 
 router.route('/').get((req,res)=>{
 	res.json("Nuesta API esta Funcionando")
+});
+
+router.route('/qr').get((req,res)=>{
+	res.render("viewqr");
 });
 
 router.route('/envio').post(envioMsg);
