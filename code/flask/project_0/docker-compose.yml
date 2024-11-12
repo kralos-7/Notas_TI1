@@ -1,9 +1,0 @@
-services:
-  app:
-    build: .
-    container_name: flask_app0
-    command: python run.py
-    ports:
-      - 3000:3000
-    volumes:
-      - .:/app

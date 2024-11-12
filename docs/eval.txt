@@ -1,9 +1,0 @@
-3er Parcial
-60% Avance Repositorio - [ 
-	- Autenticación
-  ] (30 de Enero)
-40% Examen escrito sobre pytest y flask (30 de Enero)
-
-Ordinario
- % Avance Repositorio - [   ]
- % Examen escrito sobre los tres parciales
