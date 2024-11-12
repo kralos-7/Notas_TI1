@@ -15,6 +15,7 @@ app.get('/', async (_req, res) => {
   const animales = await Animal.find();
   return res.send(animales)
 })
+
 app.get('/crear', async (_req, res) => {
   console.log('creando...')
   await Animal.create({ tipo: 'Chanchito', estado: 'Feliz' })
