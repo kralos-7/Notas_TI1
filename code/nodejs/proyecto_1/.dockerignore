@@ -1,0 +1,6 @@
+# Ignorar la carpeta node_modules
+node_modules
+package-lock.json
+Readme.md
+dockerfile.mongo
+dockerfile.nodejs

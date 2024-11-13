@@ -1,0 +1,9 @@
+# Descargamos la imagen
+FROM mongo
+
+# Declaramos las variables de entorno
+ENV "MONGO_INITDB_ROOT_USERNAME"="nico"
+ENV "MONGO_INITDB_ROOT_PASSWORD"="12345678"
+
+# Exponemos el puerto del contenedor
+EXPOSE 27017
